@@ -1,12 +1,16 @@
 # JS-password-generator-AG
 
 
+Link:  https://andreg303.github.io/JS-password-generator-AG/
+
 I have created a password generator using HTML, CSS and JAVASCRIPT in order to met criteria described below. 
+
 
 <img width="1075" alt="Screen Shot 2020-06-20 at 4 48 44 PM" src="https://user-images.githubusercontent.com/65183415/85211406-da385a00-b316-11ea-9ad5-f8f4763f58e6.png">
 
 
-Acceptance Criteria
+
+# Acceptance Criteria
 
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
