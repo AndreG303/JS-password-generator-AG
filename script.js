@@ -18,7 +18,7 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
 
 
-  // collection of data and validation of password lenght 
+// collection of data and validation of password lenght 
 
   var passLength = prompt(
     "Choose a password length between 8 and 128"
@@ -30,7 +30,7 @@ function generatePassword() {
   }
 
 
-  // Variables needed for password content 
+// Variables needed for password content 
 
   var allCharacters = [];
   var pickLowerCase = "abcdefghijklmnopqrstuvwxyz".split('');
@@ -39,7 +39,7 @@ function generatePassword() {
   var pickSpecialChar = "!@#$%^&*()+?/{-<|>".split('');
 
 
-  // Confirmation of data and validation of characters
+// Confirmation of data and validation of characters
 
   var confirmLowerCase = confirm(
     "Do You Want To Use Lowercase in your password?"
@@ -50,7 +50,6 @@ function generatePassword() {
     }
   }
 
-
   var confirmUppercase = confirm(
     "Do You Want To Use Uppercase in your password?"
   );
@@ -59,7 +58,6 @@ function generatePassword() {
       allCharacters.push(pickUpperCase[i]);
     }
   }
-
 
   var confirmNumbers = confirm(
     "Do You Want To Use Numbers in your password?"
@@ -80,14 +78,14 @@ function generatePassword() {
   }
 
 
-  // Alert if the user has an empty collection of characters  
+// Alert if the user has an empty collection of characters  
 
   if (allCharacters.length === 0) {
     alert("You must choose at least one character type. Please generate again");
     return;
   }
 
-  // all the information is gathered (all prompts are finished getting input) Then password is generated 
+// all the information is gathered (all prompts are finished getting input) Then password is generated 
 
   var endPassword = "";
   for (var i = 0; i < confirmLength; i++) {
@@ -96,7 +94,6 @@ function generatePassword() {
   }
   return endPassword;
 }
-
 
 // Event listener to generate button, I click the button to generate a password
 generateBtn.addEventListener("click", writePassword);
